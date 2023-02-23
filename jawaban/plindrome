@@ -1,0 +1,30 @@
+import java.util.Scanner;
+ class PalindromeExample  
+{  
+   public static void main(String args[])  
+   {  
+      String original,a,b,c,d,e,f, reverse = "";  
+      Scanner input1 = new Scanner(System.in);   
+      System.out.println("silahkan input");  
+      a = input1.nextLine();
+	 Scanner input2 = new Scanner(System.in);   
+      System.out.println("silahkan input");  
+      b = input2.nextLine();
+	 Scanner input3 = new Scanner(System.in);   
+      System.out.println("silahkan input");  
+      c = input3.nextLine();
+	Scanner input4 = new Scanner(System.in);   
+      System.out.println("silahkan input");  
+      d = input4.nextLine();
+	Scanner input5= new Scanner(System.in);   
+      System.out.println("silahkan input");  
+      e = input5.nextLine();
+	Scanner input6 = new Scanner(System.in);   
+      System.out.println("silahkan input");  
+      f = input6.nextLine();
+	original = a + b + c + d + e + f    
+      int length = original.length();   
+      for ( int i = length - 1; i >= 0; i-- )  
+         reverse = reverse + original.charAt(i);  
+      System.out.println(original+reverse);
+}
